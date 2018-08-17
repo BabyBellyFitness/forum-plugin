@@ -15,7 +15,7 @@ class Post extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'rainlab_forum_posts';
+    public $table = 'bbf_forum_posts';
 
     /**
      * @var array Guarded fields

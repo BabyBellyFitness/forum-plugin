@@ -18,7 +18,7 @@ class Topic extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'rainlab_forum_topics';
+    public $table = 'bbf_forum_topics';
 
     /**
      * @var array Guarded fields
@@ -81,7 +81,7 @@ class Topic extends Model
     ];
 
     public $belongsToMany = [
-        'followers' => ['BabyBellyFitness\Forum\Models\Member', 'table' => 'rainlab_forum_topic_followers', 'timestamps' => true]
+        'followers' => ['BabyBellyFitness\Forum\Models\Member', 'table' => 'bbf_forum_topic_followers', 'timestamps' => true]
     ];
 
     /**

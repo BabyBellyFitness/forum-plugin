@@ -16,7 +16,7 @@ class Member extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'rainlab_forum_members';
+    public $table = 'bbf_forum_members';
 
     /**
      * @var array Guarded fields

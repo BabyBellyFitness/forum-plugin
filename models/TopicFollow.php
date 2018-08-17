@@ -12,7 +12,7 @@ class TopicFollow extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'rainlab_forum_topic_followers';
+    public $table = 'bbf_forum_topic_followers';
 
     /**
      * @var string Primary key, used to satisfy PostgreSQL

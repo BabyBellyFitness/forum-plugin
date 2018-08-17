@@ -19,7 +19,7 @@ class Channel extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'rainlab_forum_channels';
+    public $table = 'bbf_forum_channels';
 
     /**
      * @var array Guarded fields

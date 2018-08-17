@@ -144,13 +144,13 @@ class TopicTracker
     {
         $lastLogin = $member->user->last_login;
 
-        $results = Db::table('rainlab_forum_topics')->select([
-                'rainlab_forum_topics.id',
-                'rainlab_forum_topics.channel_id',
-                'rainlab_forum_topics.last_post_at'
+        $results = Db::table('bbf_forum_topics')->select([
+                'bbf_forum_topics.id',
+                'bbf_forum_topics.channel_id',
+                'bbf_forum_topics.last_post_at'
             ])
-            ->join('rainlab_forum_channels', 'rainlab_forum_channels.id', '=', 'rainlab_forum_topics.channel_id')
-            ->where('rainlab_forum_topics.last_post_at', '>', $lastLogin)
+            ->join('bbf_forum_channels', 'bbf_forum_channels.id', '=', 'bbf_forum_topics.channel_id')
+            ->where('bbf_forum_topics.last_post_at', '>', $lastLogin)
             ->get()
         ;
 
