@@ -39,8 +39,8 @@ class Topics extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'rainlab.forum::lang.topics.component_name',
-            'description' => 'rainlab.forum::lang.topics.component_description',
+            'name'        => 'babybellyfitness.forum::lang.topics.component_name',
+            'description' => 'babybellyfitness.forum::lang.topics.component_description',
         ];
     }
 
@@ -48,20 +48,20 @@ class Topics extends ComponentBase
     {
         return [
             'memberPage' => [
-                'title'       => 'rainlab.forum::lang.member.page_name',
-                'description' => 'rainlab.forum::lang.member.page_help',
+                'title'       => 'babybellyfitness.forum::lang.member.page_name',
+                'description' => 'babybellyfitness.forum::lang.member.page_help',
                 'type'        => 'dropdown'
             ],
             'topicPage' => [
-                'title'       => 'rainlab.forum::lang.topic.page_name',
-                'description' => 'rainlab.forum::lang.topic.page_help',
+                'title'       => 'babybellyfitness.forum::lang.topic.page_name',
+                'description' => 'babybellyfitness.forum::lang.topic.page_help',
                 'type'        => 'dropdown',
             ],
             'topicsPerPage' =>  [
-                'title'             => 'rainlab.forum::lang.topics.per_page',
+                'title'             => 'babybellyfitness.forum::lang.topics.per_page',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'rainlab.forum::lang.topics.per_page_validation',
+                'validationMessage' => 'babybellyfitness.forum::lang.topics.per_page_validation',
                 'default'           => '20',
             ]
         ];

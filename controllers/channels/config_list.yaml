@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: ~/plugins/rainlab/forum/models/channel/columns.yaml
+list: ~/plugins/babybellyfitness/forum/models/channel/columns.yaml
 
 # Model Class name
 modelClass: BabyBellyFitness\Forum\Models\Channel
 
 # List Title
-title: rainlab.forum::lang.channels.manage
+title: babybellyfitness.forum::lang.channels.manage
 
 # Link URL for each record
-recordUrl: rainlab/forum/channels/update/:id
+recordUrl: babybellyfitness/forum/channels/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

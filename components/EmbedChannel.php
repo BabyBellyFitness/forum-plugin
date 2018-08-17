@@ -16,8 +16,8 @@ class EmbedChannel extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'rainlab.forum::lang.embedch.channel_name',
-            'description' => 'rainlab.forum::lang.embedch.channel_self_desc'
+            'name'        => 'babybellyfitness.forum::lang.embedch.channel_name',
+            'description' => 'babybellyfitness.forum::lang.embedch.channel_self_desc'
         ];
     }
 
@@ -25,26 +25,26 @@ class EmbedChannel extends ComponentBase
     {
         return [
             'embedCode' => [
-                'title'       => 'rainlab.forum::lang.embedch.embed_title',
-                'description' => 'rainlab.forum::lang.embedch.embed_desc',
+                'title'       => 'babybellyfitness.forum::lang.embedch.embed_title',
+                'description' => 'babybellyfitness.forum::lang.embedch.embed_desc',
                 'type'        => 'string',
                 'group'       => 'Parameters',
             ],
             'channelSlug' => [
-                'title'       => 'rainlab.forum::lang.embedch.channel_title',
-                'description' => 'rainlab.forum::lang.embedch.channel_desc',
+                'title'       => 'babybellyfitness.forum::lang.embedch.channel_title',
+                'description' => 'babybellyfitness.forum::lang.embedch.channel_desc',
                 'type'        => 'dropdown'
             ],
             'topicSlug' => [
-                'title'       => 'rainlab.forum::lang.embedch.topic_name',
-                'description' => 'rainlab.forum::lang.embedch.topic_desc',
+                'title'       => 'babybellyfitness.forum::lang.embedch.topic_name',
+                'description' => 'babybellyfitness.forum::lang.embedch.topic_desc',
                 'type'        => 'string',
                 'default'     => '{{ :topicSlug }}',
                 'group'       => 'Parameters',
             ],
             'memberPage' => [
-                'title'       => 'rainlab.forum::lang.member.page_name',
-                'description' => 'rainlab.forum::lang.member.page_help',
+                'title'       => 'babybellyfitness.forum::lang.member.page_name',
+                'description' => 'babybellyfitness.forum::lang.member.page_help',
                 'type'        => 'dropdown',
                 'group'       => 'Links',
             ],

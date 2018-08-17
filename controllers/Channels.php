@@ -21,14 +21,14 @@ class Channels extends Controller
     public $listConfig = 'config_list.yaml';
     public $reorderConfig = 'config_reorder.yaml';
     
-    public $requiredPermissions = ['rainlab.forum::lang.settings.channels'];
+    public $requiredPermissions = ['babybellyfitness.forum::lang.settings.channels'];
 
     public function __construct()
     {
         parent::__construct();
 
         BackendMenu::setContext('October.System', 'system', 'settings');
-        SettingsManager::setContext('RainLab.Forum', 'settings');
+        SettingsManager::setContext('babybellyfitness.forum', 'settings');
     }
 
     public function index_onDelete()

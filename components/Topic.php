@@ -63,8 +63,8 @@ class Topic extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'rainlab.forum::lang.topicpage.name',
-            'description' => 'rainlab.forum::lang.topicpage.self_desc'
+            'name'        => 'babybellyfitness.forum::lang.topicpage.name',
+            'description' => 'babybellyfitness.forum::lang.topicpage.self_desc'
         ];
     }
 
@@ -72,25 +72,25 @@ class Topic extends ComponentBase
     {
         return [
             'slug' => [
-                'title'       => 'rainlab.forum::lang.topicpage.slug_name',
-                'description' => 'rainlab.forum::lang.topicpage.slug_desc',
+                'title'       => 'babybellyfitness.forum::lang.topicpage.slug_name',
+                'description' => 'babybellyfitness.forum::lang.topicpage.slug_desc',
                 'default'     => '{{ :slug }}',
                 'type'        => 'string',
             ],
             'postsPerPage' => [
-                'title'       => 'rainlab.forum::lang.topicpage.pagination_name',
+                'title'       => 'babybellyfitness.forum::lang.topicpage.pagination_name',
                 'default'     => '20',
                 'type'        => 'string',
             ],
             'memberPage' => [
-                'title'       => 'rainlab.forum::lang.member.page_name',
-                'description' => 'rainlab.forum::lang.member.page_help',
+                'title'       => 'babybellyfitness.forum::lang.member.page_name',
+                'description' => 'babybellyfitness.forum::lang.member.page_help',
                 'type'        => 'dropdown',
                 'group'       => 'Links',
             ],
             'channelPage' => [
-                'title'       => 'rainlab.forum::lang.topicpage.channel_title',
-                'description' => 'rainlab.forum::lang.topicpage.channel_desc',
+                'title'       => 'babybellyfitness.forum::lang.topicpage.channel_title',
+                'description' => 'babybellyfitness.forum::lang.topicpage.channel_desc',
                 'type'        => 'dropdown',
                 'group'       => 'Links',
             ],
@@ -291,7 +291,7 @@ class Topic extends ComponentBase
          * Unsubscribe link
          */
         if ($action == 'unsubscribe' && $member->user) {
-            MailBlocker::addBlock('rainlab.forum::mail.topic_reply', $member->user);
+            MailBlocker::addBlock('babybellyfitness.forum::mail.topic_reply', $member->user);
             Flash::success('You will no longer receive notifications about any topics in this forum.');
         }
 
@@ -327,7 +327,7 @@ class Topic extends ComponentBase
             /*
              * Extensbility
              */
-            Event::fire('rainlab.forum.topic.create', [$this, $topic, $topicUrl]);
+            Event::fire('babybellyfitness.forum.topic.create', [$this, $topic, $topicUrl]);
             $this->fireEvent('topic.create', [$topic, $topicUrl]);
 
             /*
@@ -365,7 +365,7 @@ class Topic extends ComponentBase
             /*
              * Extensbility
              */
-            Event::fire('rainlab.forum.topic.post', [$this, $post, $postUrl]);
+            Event::fire('babybellyfitness.forum.topic.post', [$this, $post, $postUrl]);
             $this->fireEvent('topic.post', [$post, $postUrl]);
 
             /*

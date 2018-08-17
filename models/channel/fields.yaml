@@ -4,33 +4,33 @@
 
 fields:
     parent:
-        label: rainlab.forum::lang.data.parent
+        label: babybellyfitness.forum::lang.data.parent
         type: relation
         nameFrom: title
-        emptyOption: rainlab.forum::lang.data.noparent
+        emptyOption: babybellyfitness.forum::lang.data.noparent
 
     title:
-        label: rainlab.forum::lang.data.title
+        label: babybellyfitness.forum::lang.data.title
         span: left
 
     slug:
-        label: rainlab.forum::lang.data.slug
+        label: babybellyfitness.forum::lang.data.slug
         span: right
         preset: title
 
     description:
-        label: rainlab.forum::lang.data.desc
+        label: babybellyfitness.forum::lang.data.desc
         type: textarea
         size: tiny
 
     is_moderated:
-        label: rainlab.forum::lang.data.moderated
-        comment: rainlab.forum::lang.data.is_mod
+        label: babybellyfitness.forum::lang.data.moderated
+        comment: babybellyfitness.forum::lang.data.is_mod
         type: checkbox
         span: auto
 
     is_hidden:
-        label: rainlab.forum::lang.data.hidden
-        comment: rainlab.forum::lang.data.is_hidden
+        label: babybellyfitness.forum::lang.data.hidden
+        comment: babybellyfitness.forum::lang.data.is_hidden
         type: checkbox
         span: auto

@@ -22,8 +22,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'rainlab.forum::lang.plugin.name',
-            'description' => 'rainlab.forum::lang.plugin.description',
+            'name'        => 'babybellyfitness.forum::lang.plugin.name',
+            'description' => 'babybellyfitness.forum::lang.plugin.description',
             'author'      => 'Alexey Bobkov, Samuel Georges',
             'icon'        => 'icon-comments',
             'homepage'    => 'https://github.com/rainlab/forum-plugin'
@@ -54,23 +54,23 @@ class Plugin extends PluginBase
 
             $widget->addFields([
                 'forum_member[username]' => [
-                    'label'   => 'rainlab.forum::lang.settings.username',
+                    'label'   => 'babybellyfitness.forum::lang.settings.username',
                     'tab'     => 'Forum',
-                    'comment' => 'rainlab.forum::lang.settings.username_comment'
+                    'comment' => 'babybellyfitness.forum::lang.settings.username_comment'
                 ],
                 'forum_member[is_moderator]' => [
-                    'label'   => 'rainlab.forum::lang.settings.moderator',
+                    'label'   => 'babybellyfitness.forum::lang.settings.moderator',
                     'type'    => 'checkbox',
                     'tab'     => 'Forum',
                     'span'    => 'auto',
-                    'comment' => 'rainlab.forum::lang.settings.moderator_comment'
+                    'comment' => 'babybellyfitness.forum::lang.settings.moderator_comment'
                 ],
                 'forum_member[is_banned]' => [
-                    'label'   => 'rainlab.forum::lang.settings.banned',
+                    'label'   => 'babybellyfitness.forum::lang.settings.banned',
                     'type'    => 'checkbox',
                     'tab'     => 'Forum',
                     'span'    => 'auto',
-                    'comment' => 'rainlab.forum::lang.settings.banned_comment'
+                    'comment' => 'babybellyfitness.forum::lang.settings.banned_comment'
                 ]
             ], 'primary');
         });
@@ -82,7 +82,7 @@ class Plugin extends PluginBase
 
             $widget->addColumns([
                 'forum_member_username' => [
-                    'label'      => 'rainlab.forum::lang.settings.forum_username',
+                    'label'      => 'babybellyfitness.forum::lang.settings.forum_username',
                     'relation'   => 'forum_member',
                     'select'     => 'username',
                     'searchable' => false,
@@ -108,9 +108,9 @@ class Plugin extends PluginBase
     public function registerPermissions() 
     {
         return [
-            'rainlab.forum::lang.settings.channels' => [
-                'tab'   => 'rainlab.forum::lang.settings.channels',
-                'label' => 'rainlab.forum::lang.settings.channels_desc'
+            'babybellyfitness.forum::lang.settings.channels' => [
+                'tab'   => 'babybellyfitness.forum::lang.settings.channels',
+                'label' => 'babybellyfitness.forum::lang.settings.channels_desc'
             ]
         ];
     }
@@ -119,13 +119,13 @@ class Plugin extends PluginBase
     {
         return [
             'settings' => [
-                'label'       => 'rainlab.forum::lang.settings.channels',
-                'description' => 'rainlab.forum::lang.settings.channels_desc',
+                'label'       => 'babybellyfitness.forum::lang.settings.channels',
+                'description' => 'babybellyfitness.forum::lang.settings.channels_desc',
                 'icon'        => 'icon-comments',
-                'url'         => Backend::url('rainlab/forum/channels'),
-                'category'    => 'rainlab.forum::lang.plugin.name',
+                'url'         => Backend::url('babybellyfitness/forum/channels'),
+                'category'    => 'babybellyfitness.forum::lang.plugin.name',
                 'order'       => 500,
-                'permissions' => ['rainlab.forum::lang.settings.channels'],
+                'permissions' => ['babybellyfitness.forum::lang.settings.channels'],
             ]
         ];
     }
@@ -133,8 +133,8 @@ class Plugin extends PluginBase
     public function registerMailTemplates()
     {
         return [
-            'rainlab.forum::mail.topic_reply'   => 'Notification to followers when a post is made to a topic.',
-            'rainlab.forum::mail.member_report' => 'Notification to moderators when a member is reported to be a spammer.'
+            'babybellyfitness.forum::mail.topic_reply'   => 'Notification to followers when a post is made to a topic.',
+            'babybellyfitness.forum::mail.member_report' => 'Notification to moderators when a member is reported to be a spammer.'
         ];
     }
 }
