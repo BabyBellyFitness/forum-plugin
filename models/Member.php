@@ -49,7 +49,7 @@ class Member extends Model
      * @var array Relations
      */
     public $belongsTo = [
-        'user' => ['RainLab\User\Models\User']
+        'user' => ['Bbf\Models\User']
     ];
 
     public $hasMany = [

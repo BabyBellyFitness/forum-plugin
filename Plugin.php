@@ -2,17 +2,17 @@
 
 use Event;
 use Backend;
-use RainLab\User\Models\User;
+use Bbf\Models\User;
 use RainLab\Forum\Models\Member;
 use System\Classes\PluginBase;
-use RainLab\User\Controllers\Users as UsersController;
+use Bbf\Controllers\Users as UsersController;
 
 /**
  * Forum Plugin Information File
  */
 class Plugin extends PluginBase
 {
-    public $require = ['RainLab.User'];
+    public $require = [];
 
     /**
      * Returns information about this plugin.
@@ -42,7 +42,7 @@ class Plugin extends PluginBase
 
         UsersController::extendFormFields(function($widget, $model, $context) {
             // Prevent extending of related form instead of the intended User form
-            if (!$widget->model instanceof \RainLab\User\Models\User) {
+            if (!$widget->model instanceof \Bbf\Models\User) {
                 return;
             }
             if ($context != 'update') {
@@ -76,7 +76,7 @@ class Plugin extends PluginBase
         });
 
         UsersController::extendListColumns(function($widget, $model) {
-            if (!$model instanceof \RainLab\User\Models\User) {
+            if (!$model instanceof \Bbf\Models\User) {
                 return;
             }
 

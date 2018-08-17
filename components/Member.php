@@ -9,8 +9,8 @@ use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use ApplicationException;
 use RainLab\Forum\Models\Member as MemberModel;
-use RainLab\User\Models\User as UserModel;
-use RainLab\User\Models\MailBlocker;
+use Bbf\Models\User as UserModel;
+use Bbf\Models\MailBlocker;
 use Exception;
 
 class Member extends ComponentBase
