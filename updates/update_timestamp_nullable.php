@@ -1,4 +1,4 @@
-<?php namespace RainLab\Forum\Updates;
+<?php namespace BabyBellyFitness\Forum\Updates;
 
 use October\Rain\Database\Updates\Migration;
 use DbDongle;
@@ -9,11 +9,11 @@ class UpdateTimestampsNullable extends Migration
     {
         DbDongle::disableStrictMode();
 
-        DbDongle::convertTimestamps('rainlab_forum_channels');
-        DbDongle::convertTimestamps('rainlab_forum_members');
-        DbDongle::convertTimestamps('rainlab_forum_posts');
-        DbDongle::convertTimestamps('rainlab_forum_topic_followers');
-        DbDongle::convertTimestamps('rainlab_forum_topics');
+        DbDongle::convertTimestamps('bbf_forum_channels');
+        DbDongle::convertTimestamps('bbf_forum_members');
+        DbDongle::convertTimestamps('bbf_forum_posts');
+        DbDongle::convertTimestamps('bbf_forum_topic_followers');
+        DbDongle::convertTimestamps('bbf_forum_topics');
     }
 
     public function down()

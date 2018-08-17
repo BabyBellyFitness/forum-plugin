@@ -1,9 +1,9 @@
-<?php namespace RainLab\Forum\Components;
+<?php namespace BabyBellyFitness\Forum\Components;
 
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
-use RainLab\Forum\Models\Topic as TopicModel;
-use RainLab\Forum\Models\Channel as ChannelModel;
+use BabyBellyFitness\Forum\Models\Topic as TopicModel;
+use BabyBellyFitness\Forum\Models\Channel as ChannelModel;
 use Exception;
 
 class EmbedChannel extends ComponentBase
@@ -84,7 +84,7 @@ class EmbedChannel extends ComponentBase
          */
         if (input('channel') || $this->property('topicSlug')) {
             $properties['slug'] = '{{' . $this->propertyName('topicSlug') . '}}';
-            $component = $this->addComponent('RainLab\Forum\Components\Topic', $this->alias, $properties);
+            $component = $this->addComponent('BabyBellyFitness\Forum\Components\Topic', $this->alias, $properties);
         }
         /*
          * Proxy as channel
@@ -95,7 +95,7 @@ class EmbedChannel extends ComponentBase
             }
 
             $properties['topicPage'] = $this->page->baseFileName;
-            $component = $this->addComponent('RainLab\Forum\Components\Channel', $this->alias, $properties);
+            $component = $this->addComponent('BabyBellyFitness\Forum\Components\Channel', $this->alias, $properties);
             $component->embedTopicParam = $this->paramName('topicSlug');
 
             /*

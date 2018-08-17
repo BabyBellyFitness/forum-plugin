@@ -9,7 +9,7 @@ title: Reorder Channels
 nameFrom: title
 
 # Model Class name
-modelClass: RainLab\Forum\Models\Channel
+modelClass: BabyBellyFitness\Forum\Models\Channel
 
 # Toolbar widget configuration
 toolbar:

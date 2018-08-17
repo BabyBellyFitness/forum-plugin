@@ -1,4 +1,4 @@
-<?php namespace RainLab\Forum\Models;
+<?php namespace BabyBellyFitness\Forum\Models;
 
 use Mail;
 use Model;

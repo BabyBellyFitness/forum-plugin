@@ -1,4 +1,4 @@
-<?php namespace RainLab\Forum\Models;
+<?php namespace BabyBellyFitness\Forum\Models;
 
 use Model;
 use ApplicationException;
@@ -57,14 +57,14 @@ class Channel extends Model
      * @var array Relations
      */
     public $hasMany = [
-        'topics' => ['RainLab\Forum\Models\Topic']
+        'topics' => ['BabyBellyFitness\Forum\Models\Topic']
     ];
 
     /**
      * @var array Relations
      */
     public $hasOne = [
-        'first_topic' => ['RainLab\Forum\Models\Topic', 'order' => 'updated_at desc']
+        'first_topic' => ['BabyBellyFitness\Forum\Models\Topic', 'order' => 'updated_at desc']
     ];
 
     /**

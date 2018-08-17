@@ -1,9 +1,9 @@
-<?php namespace RainLab\Forum\Components;
+<?php namespace BabyBellyFitness\Forum\Components;
 
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
-use RainLab\Forum\Models\Topic as TopicModel;
-use RainLab\Forum\Models\Channel as ChannelModel;
+use BabyBellyFitness\Forum\Models\Topic as TopicModel;
+use BabyBellyFitness\Forum\Models\Channel as ChannelModel;
 use Exception;
 
 class EmbedTopic extends ComponentBase
@@ -79,7 +79,7 @@ class EmbedTopic extends ComponentBase
             $properties['slug'] = $topic->slug;
         }
 
-        $component = $this->addComponent('RainLab\Forum\Components\Topic', $this->alias, $properties);
+        $component = $this->addComponent('BabyBellyFitness\Forum\Components\Topic', $this->alias, $properties);
 
         /*
          * If a topic does not already exist, generate it when the page ends.

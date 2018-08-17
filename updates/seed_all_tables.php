@@ -1,10 +1,10 @@
-<?php namespace RainLab\Forum\Updates;
+<?php namespace BabyBellyFitness\Forum\Updates;
 
 use Schema;
-use RainLab\Forum\Models\Post;
-use RainLab\Forum\Models\Topic;
-use RainLab\Forum\Models\Member;
-use RainLab\Forum\Models\Channel;
+use BabyBellyFitness\Forum\Models\Post;
+use BabyBellyFitness\Forum\Models\Topic;
+use BabyBellyFitness\Forum\Models\Member;
+use BabyBellyFitness\Forum\Models\Channel;
 use October\Rain\Database\Updates\Seeder;
 
 class SeedAllTables extends Seeder

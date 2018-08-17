@@ -1,4 +1,4 @@
-<?php namespace RainLab\Forum\Models;
+<?php namespace BabyBellyFitness\Forum\Models;
 
 use Str;
 use Auth;
@@ -53,13 +53,13 @@ class Member extends Model
     ];
 
     public $hasMany = [
-        'posts' => ['RainLab\Forum\Models\Post', 'order' => 'created_at desc']
+        'posts' => ['BabyBellyFitness\Forum\Models\Post', 'order' => 'created_at desc']
     ];
 
     /**
      * Automatically creates a forum member for a user if not one already.
      * @param  RainLab\User\Models\User $user
-     * @return RainLab\Forum\Models\Member
+     * @return BabyBellyFitness\Forum\Models\Member
      */
     public static function getFromUser($user = null)
     {

@@ -1,4 +1,4 @@
-<?php namespace RainLab\Forum\Classes;
+<?php namespace BabyBellyFitness\Forum\Classes;
 
 use Db;
 use Carbon\Carbon;

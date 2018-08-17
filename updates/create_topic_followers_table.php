@@ -1,15 +1,15 @@
-<?php namespace RainLab\Forum\Updates;
+<?php namespace BabyBellyFitness\Forum\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
-use RainLab\Forum\Models\Post;
-use RainLab\Forum\Models\TopicFollow;
+use BabyBellyFitness\Forum\Models\Post;
+use BabyBellyFitness\Forum\Models\TopicFollow;
 
 class CreateTopicFollowersTable extends Migration
 {
     public function up()
     {
-        Schema::create('rainlab_forum_topic_followers', function($table)
+        Schema::create('bbf_forum_topic_followers', function($table)
         {
             $table->engine = 'InnoDB';
             $table->integer('topic_id')->unsigned();
@@ -23,7 +23,7 @@ class CreateTopicFollowersTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('rainlab_forum_topic_followers');
+        Schema::dropIfExists('bbf_forum_topic_followers');
     }
 
     private function followExistingPosts()

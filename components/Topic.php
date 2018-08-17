@@ -1,4 +1,4 @@
-<?php namespace RainLab\Forum\Components;
+<?php namespace BabyBellyFitness\Forum\Components;
 
 use Auth;
 use Flash;
@@ -10,12 +10,12 @@ use Bbf\Models\User as UserModel;
 use Bbf\Models\MailBlocker;
 use Cms\Classes\ComponentBase;
 use ApplicationException;
-use RainLab\Forum\Models\Topic as TopicModel;
-use RainLab\Forum\Models\Channel as ChannelModel;
-use RainLab\Forum\Models\Member as MemberModel;
-use RainLab\Forum\Models\Post as PostModel;
-use RainLab\Forum\Models\TopicFollow;
-use RainLab\Forum\Classes\TopicTracker;
+use BabyBellyFitness\Forum\Models\Topic as TopicModel;
+use BabyBellyFitness\Forum\Models\Channel as ChannelModel;
+use BabyBellyFitness\Forum\Models\Member as MemberModel;
+use BabyBellyFitness\Forum\Models\Post as PostModel;
+use BabyBellyFitness\Forum\Models\TopicFollow;
+use BabyBellyFitness\Forum\Classes\TopicTracker;
 use Exception;
 
 class Topic extends ComponentBase
@@ -26,17 +26,17 @@ class Topic extends ComponentBase
     public $embedMode = false;
 
     /**
-     * @var RainLab\Forum\Models\Topic Topic cache
+     * @var BabyBellyFitness\Forum\Models\Topic Topic cache
      */
     protected $topic = null;
 
     /**
-     * @var RainLab\Forum\Models\Channel Channel cache
+     * @var BabyBellyFitness\Forum\Models\Channel Channel cache
      */
     protected $channel = null;
 
     /**
-     * @var RainLab\Forum\Models\Member Member cache
+     * @var BabyBellyFitness\Forum\Models\Member Member cache
      */
     protected $member = null;
 

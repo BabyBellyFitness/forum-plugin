@@ -9,7 +9,7 @@ name: rainlab.forum::lang.channels.name
 form: ~/plugins/rainlab/forum/models/channel/fields.yaml
 
 # Model Class name
-modelClass: RainLab\Forum\Models\Channel
+modelClass: BabyBellyFitness\Forum\Models\Channel
 
 # Default redirect location
 defaultRedirect: rainlab/forum/channels

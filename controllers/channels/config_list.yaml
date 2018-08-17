@@ -6,7 +6,7 @@
 list: ~/plugins/rainlab/forum/models/channel/columns.yaml
 
 # Model Class name
-modelClass: RainLab\Forum\Models\Channel
+modelClass: BabyBellyFitness\Forum\Models\Channel
 
 # List Title
 title: rainlab.forum::lang.channels.manage

@@ -1,4 +1,4 @@
-<?php namespace RainLab\Forum\Components;
+<?php namespace BabyBellyFitness\Forum\Components;
 
 use Auth;
 use Mail;
@@ -8,7 +8,7 @@ use Redirect;
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use ApplicationException;
-use RainLab\Forum\Models\Member as MemberModel;
+use BabyBellyFitness\Forum\Models\Member as MemberModel;
 use Bbf\Models\User as UserModel;
 use Bbf\Models\MailBlocker;
 use Exception;
@@ -16,12 +16,12 @@ use Exception;
 class Member extends ComponentBase
 {
     /**
-     * @var RainLab\Forum\Models\Member Member cache
+     * @var BabyBellyFitness\Forum\Models\Member Member cache
      */
     protected $member = null;
 
     /**
-     * @var RainLab\Forum\Models\Member Other member cache
+     * @var BabyBellyFitness\Forum\Models\Member Other member cache
      */
     protected $otherMember = null;
 

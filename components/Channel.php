@@ -1,14 +1,14 @@
-<?php namespace RainLab\Forum\Components;
+<?php namespace BabyBellyFitness\Forum\Components;
 
 use Auth;
 use Request;
 use Redirect;
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
-use RainLab\Forum\Models\Topic as TopicModel;
-use RainLab\Forum\Models\Channel as ChannelModel;
-use RainLab\Forum\Models\Member as MemberModel;
-use RainLab\Forum\Classes\TopicTracker;
+use BabyBellyFitness\Forum\Models\Topic as TopicModel;
+use BabyBellyFitness\Forum\Models\Channel as ChannelModel;
+use BabyBellyFitness\Forum\Models\Member as MemberModel;
+use BabyBellyFitness\Forum\Classes\TopicTracker;
 
 /**
  * Channel component
@@ -28,12 +28,12 @@ class Channel extends ComponentBase
     public $embedTopicParam = 'topicSlug';
 
     /**
-     * @var RainLab\Forum\Models\Member Member cache
+     * @var BabyBellyFitness\Forum\Models\Member Member cache
      */
     protected $member = null;
 
     /**
-     * @var RainLab\Forum\Models\Channel Channel cache
+     * @var BabyBellyFitness\Forum\Models\Channel Channel cache
      */
     protected $channel = null;
 

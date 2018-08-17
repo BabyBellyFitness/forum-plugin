@@ -1,4 +1,4 @@
-<?php namespace RainLab\Forum\Models;
+<?php namespace BabyBellyFitness\Forum\Models;
 
 use Db;
 use App;
@@ -63,25 +63,25 @@ class Topic extends Model
      * @var array Relations
      */
     public $hasMany = [
-        'posts' => ['RainLab\Forum\Models\Post'],
+        'posts' => ['BabyBellyFitness\Forum\Models\Post'],
     ];
 
     /**
      * @var array Relations
      */
     public $hasOne = [
-        'first_post' => ['RainLab\Forum\Models\Post', 'order' => 'created_at asc']
+        'first_post' => ['BabyBellyFitness\Forum\Models\Post', 'order' => 'created_at asc']
     ];
 
     public $belongsTo = [
-        'channel'          => ['RainLab\Forum\Models\Channel'],
-        'start_member'     => ['RainLab\Forum\Models\Member'],
-        'last_post'        => ['RainLab\Forum\Models\Post'],
-        'last_post_member' => ['RainLab\Forum\Models\Member'],
+        'channel'          => ['BabyBellyFitness\Forum\Models\Channel'],
+        'start_member'     => ['BabyBellyFitness\Forum\Models\Member'],
+        'last_post'        => ['BabyBellyFitness\Forum\Models\Post'],
+        'last_post_member' => ['BabyBellyFitness\Forum\Models\Member'],
     ];
 
     public $belongsToMany = [
-        'followers' => ['RainLab\Forum\Models\Member', 'table' => 'rainlab_forum_topic_followers', 'timestamps' => true]
+        'followers' => ['BabyBellyFitness\Forum\Models\Member', 'table' => 'rainlab_forum_topic_followers', 'timestamps' => true]
     ];
 
     /**

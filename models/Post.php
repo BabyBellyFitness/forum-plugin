@@ -1,4 +1,4 @@
-<?php namespace RainLab\Forum\Models;
+<?php namespace BabyBellyFitness\Forum\Models;
 
 use Html;
 use Model;
@@ -45,8 +45,8 @@ class Post extends Model
      * @var array Relations
      */
     public $belongsTo = [
-        'topic'  => ['RainLab\Forum\Models\Topic'],
-        'member' => ['RainLab\Forum\Models\Member'],
+        'topic'  => ['BabyBellyFitness\Forum\Models\Topic'],
+        'member' => ['BabyBellyFitness\Forum\Models\Member'],
     ];
 
     /**

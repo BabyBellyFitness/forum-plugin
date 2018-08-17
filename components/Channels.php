@@ -1,20 +1,20 @@
-<?php namespace RainLab\Forum\Components;
+<?php namespace BabyBellyFitness\Forum\Components;
 
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
-use RainLab\Forum\Models\Channel;
-use RainLab\Forum\Models\Member as MemberModel;
-use RainLab\Forum\Classes\TopicTracker;
+use BabyBellyFitness\Forum\Models\Channel;
+use BabyBellyFitness\Forum\Models\Member as MemberModel;
+use BabyBellyFitness\Forum\Classes\TopicTracker;
 
 class Channels extends ComponentBase
 {
     /**
-     * @var RainLab\Forum\Models\Member Member cache
+     * @var BabyBellyFitness\Forum\Models\Member Member cache
      */
     protected $member;
 
     /**
-     * @var RainLab\Forum\Models\Channel Channel collection cache
+     * @var BabyBellyFitness\Forum\Models\Channel Channel collection cache
      */
     protected $channels;
 

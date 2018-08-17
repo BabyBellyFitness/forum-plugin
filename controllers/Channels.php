@@ -1,9 +1,9 @@
-<?php namespace RainLab\Forum\Controllers;
+<?php namespace BabyBellyFitness\Forum\Controllers;
 
 use Flash;
 use BackendMenu;
 use Backend\Classes\Controller;
-use RainLab\Forum\Models\Channel;
+use BabyBellyFitness\Forum\Models\Channel;
 use System\Classes\SettingsManager;
 
 /**

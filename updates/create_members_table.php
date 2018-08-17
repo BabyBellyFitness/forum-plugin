@@ -1,4 +1,4 @@
-<?php namespace RainLab\Forum\Updates;
+<?php namespace BabyBellyFitness\Forum\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
@@ -7,7 +7,7 @@ class CreateMembersTable extends Migration
 {
     public function up()
     {
-        Schema::create('rainlab_forum_members', function($table)
+        Schema::create('bbf_forum_members', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
@@ -23,6 +23,6 @@ class CreateMembersTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('rainlab_forum_members');
+        Schema::dropIfExists('bbf_forum_members');
     }
 }

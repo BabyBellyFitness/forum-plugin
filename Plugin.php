@@ -1,9 +1,9 @@
-<?php namespace RainLab\Forum;
+<?php namespace BabyBellyFitness\Forum;
 
 use Event;
 use Backend;
 use Bbf\Models\User;
-use RainLab\Forum\Models\Member;
+use BabyBellyFitness\Forum\Models\Member;
 use System\Classes\PluginBase;
 use Bbf\Controllers\Users as UsersController;
 
@@ -33,7 +33,7 @@ class Plugin extends PluginBase
     public function boot()
     {
         User::extend(function($model) {
-            $model->hasOne['forum_member'] = ['RainLab\Forum\Models\Member'];
+            $model->hasOne['forum_member'] = ['BabyBellyFitness\Forum\Models\Member'];
 
             $model->bindEvent('model.beforeDelete', function() use ($model) {
                 $model->forum_member && $model->forum_member->delete();
@@ -95,13 +95,13 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-           '\RainLab\Forum\Components\Channels'     => 'forumChannels',
-           '\RainLab\Forum\Components\Channel'      => 'forumChannel',
-           '\RainLab\Forum\Components\Topic'        => 'forumTopic',
-           '\RainLab\Forum\Components\Topics'       => 'forumTopics',
-           '\RainLab\Forum\Components\Member'       => 'forumMember',
-           '\RainLab\Forum\Components\EmbedTopic'   => 'forumEmbedTopic',
-           '\RainLab\Forum\Components\EmbedChannel' => 'forumEmbedChannel'
+           '\BabyBellyFitness\Forum\Components\Channels'     => 'forumChannels',
+           '\BabyBellyFitness\Forum\Components\Channel'      => 'forumChannel',
+           '\BabyBellyFitness\Forum\Components\Topic'        => 'forumTopic',
+           '\BabyBellyFitness\Forum\Components\Topics'       => 'forumTopics',
+           '\BabyBellyFitness\Forum\Components\Member'       => 'forumMember',
+           '\BabyBellyFitness\Forum\Components\EmbedTopic'   => 'forumEmbedTopic',
+           '\BabyBellyFitness\Forum\Components\EmbedChannel' => 'forumEmbedChannel'
         ];
     }
     
